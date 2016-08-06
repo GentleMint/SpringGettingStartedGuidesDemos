@@ -37,7 +37,7 @@ dependencies {
 //         attributes 'Main-Class': 'hello.HelloGradle'
 //     }
 // }
-
+apply plugin: 'java'
 apply plugin: 'application'
 apply plugin: 'eclipse' //https://docs.gradle.org/current/userguide/eclipse_plugin.html
 
@@ -52,3 +52,10 @@ dependencies {
     // compile group: 'joda-time', name: 'joda-time', version: '2.9.4'
     compile('joda-time:joda-time:2.9.4')
 }
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+// task wrapper(type: Wrapper) {
+//     gradleVersion = '2.3'
+// }
