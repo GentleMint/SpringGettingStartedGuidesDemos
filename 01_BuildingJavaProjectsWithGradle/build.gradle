@@ -30,10 +30,14 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 */
-apply plugin: 'java'
+// apply plugin: 'java'
 
-jar {
-    manifest {
-        attributes 'Main-Class': 'hello.HelloGradle'
-    }
-}
+// jar {
+//     manifest {
+//         attributes 'Main-Class': 'hello.HelloGradle'
+//     }
+// }
+
+apply plugin: 'application'
+
+mainClassName = 'hello.HelloGradle'
