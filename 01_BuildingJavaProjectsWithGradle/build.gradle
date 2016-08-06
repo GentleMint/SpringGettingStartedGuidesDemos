@@ -39,6 +39,7 @@ dependencies {
 // }
 
 apply plugin: 'application'
+apply plugin: 'eclipse' //https://docs.gradle.org/current/userguide/eclipse_plugin.html
 
 mainClassName = 'hello.HelloGradle'
 
