@@ -41,3 +41,13 @@ dependencies {
 apply plugin: 'application'
 
 mainClassName = 'hello.HelloGradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    // compile group: 'joda-time', name: 'joda-time', version: '2.9.4'
+    compile('joda-time:joda-time:2.9.4')
+}
